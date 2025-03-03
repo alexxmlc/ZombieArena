@@ -33,7 +33,7 @@ void Player::spawn(IntRect arena, Vector2f resolution, int tileSize) {
 	m_Resolution.y = resolution.y;
 }
 
-void Player::resetPlayerStats()
+void Player::resetPlayerStatus()
 {
 	m_Speed = START_SPEED;
 	m_Health = START_HEALTH;
@@ -174,7 +174,7 @@ void Player::update(float elapsedTime, Vector2i mousePosition)
 
 	//Function to calculate the angle in wich way the player is facing
 	//The angle is calculated based on the mouse position and the resolution of the screen
-	float angle = (atan2(mousePosition.y - m_Resolution.y / 2, mousePosition.x - m_Resolution.x / 2) * 180) / 3.141;
+	float angle = (atan2(mousePosition.y - m_Resolution.y / 2,mousePosition.x - m_Resolution.x / 2)* 180) / 3.141;
 	m_Sprite.setRotation(angle);
 }
 
