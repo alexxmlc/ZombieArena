@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "E:\\MyProjects\\ZombieArena\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|E:\\MyProjects\\ZombieArena\\ZombieArena.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|solutionrelative:ZombieArena.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|E:\\MyProjects\\ZombieArena\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|solutionrelative:Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|E:\\MyProjects\\ZombieArena\\createBackground.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|solutionrelative:createBackground.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|E:\\MyProjects\\ZombieArena\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|solutionrelative:Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|E:\\MyProjects\\ZombieArena\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -21,6 +17,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|E:\\MyProjects\\ZombieArena\\ZombieArena.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|solutionrelative:ZombieArena.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|E:\\MyProjects\\ZombieArena\\ZombieArena.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|solutionrelative:ZombieArena.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -44,27 +44,25 @@
               "RelativeDocumentMoniker": "createBackground.cpp",
               "ToolTip": "E:\\MyProjects\\ZombieArena\\createBackground.cpp",
               "RelativeToolTip": "createBackground.cpp",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAADUAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACkAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-03T14:31:16.937Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-03T14:31:16.937Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Player.h",
               "DocumentMoniker": "E:\\MyProjects\\ZombieArena\\Player.h",
               "RelativeDocumentMoniker": "Player.h",
               "ToolTip": "E:\\MyProjects\\ZombieArena\\Player.h",
               "RelativeToolTip": "Player.h",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-03T14:24:20.027Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-03T14:24:20.027Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "ZombieArena.h",
               "DocumentMoniker": "E:\\MyProjects\\ZombieArena\\ZombieArena.h",
               "RelativeDocumentMoniker": "ZombieArena.h",
@@ -72,34 +70,32 @@
               "RelativeToolTip": "ZombieArena.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-03T14:28:47.832Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-03T14:28:47.832Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Player.cpp",
               "DocumentMoniker": "E:\\MyProjects\\ZombieArena\\Player.cpp",
               "RelativeDocumentMoniker": "Player.cpp",
               "ToolTip": "E:\\MyProjects\\ZombieArena\\Player.cpp",
               "RelativeToolTip": "Player.cpp",
-              "ViewState": "AgIAAKIAAAAAAAAAAAAAALAAAABvAAAAAAAAAA==",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAAALEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-02-24T15:08:48.659Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "ZombieArena.cpp",
               "DocumentMoniker": "E:\\MyProjects\\ZombieArena\\ZombieArena.cpp",
               "RelativeDocumentMoniker": "ZombieArena.cpp",
               "ToolTip": "E:\\MyProjects\\ZombieArena\\ZombieArena.cpp",
               "RelativeToolTip": "ZombieArena.cpp",
-              "ViewState": "AgIAAJ0AAAAAAAAAAAAiwK8AAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAOsAAAAAAAAAAAAAAKwAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-24T15:04:18.948Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-24T15:04:18.948Z"
             }
           ]
         }
