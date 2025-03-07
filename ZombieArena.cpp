@@ -172,8 +172,8 @@ int main()
 			if (state == State::PLAYING)
 			{
 				//Prepare the level
-				arena.width = 1000;
-				arena.height = 1000;
+				arena.width = 500;
+				arena.height = 500;
 				arena.left = 0;
 				arena.top = 0;
 
@@ -183,7 +183,7 @@ int main()
 				//Spawn the player in the minddle of the arena
 				player.spawn(arena, resolution, tileSize);
 
-				//Reset the clock so there isn't a frame jumb
+				//Reset the clock so there isn't a frame jump
 				clock.restart();
 			}
 		}//End leveling up
@@ -209,7 +209,7 @@ int main()
 			//Update mainView layer
 			player.update(dtAsSeconds, Mouse::getPosition());
 
-			//Make a note	of the players current position
+			//Make a note of the players current position
 			Vector2f playerPosition(player.getCenter());
 
 			//Make the view center around the player

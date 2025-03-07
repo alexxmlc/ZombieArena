@@ -45,9 +45,9 @@ int createBackground(VertexArray& rVA, IntRect arena)
 				//Use a random floor texture (first 3 from the sprite sheet)
 				srand((int)time(0) + h * w - h);				//seeding the random nb generator
 				int mudOrGrass = (rand() % TILE_TYPES);			//initialized with a nb between 0 and TYLE_TYPES
-				int verticalOffset = mudOrGrass * TILE_SIZE;	//vertical reference point to the starting height (the bottom) of the randomly  chosen texture from the sprite sheet
+				int verticalOffset = mudOrGrass * TILE_SIZE;	//vertical reference point to the starting height (the bottom) of the randomly chosen texture from the sprite sheet
 
-				//We set the coordinates for eacg one of the corners of the quad texture sheet starting from the left-bottom one = (0, verticalOffset)
+				//We set the coordinates for each one of the corners of the quad texture sheet starting from the left-bottom one = (0, verticalOffset)
 				rVA[currentVertex + 0].texCoords = Vector2f(0, 0 + verticalOffset);
 				rVA[currentVertex + 1].texCoords = Vector2f(TILE_SIZE, 0 + verticalOffset);
 				rVA[currentVertex + 2].texCoords = Vector2f(TILE_SIZE, verticalOffset + TILE_SIZE);
