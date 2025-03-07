@@ -169,7 +169,7 @@ void Player::update(float elapsedTime, Vector2i mousePosition)
 
 	if (m_Position.y < m_Arena.top + m_TileSize)
 	{
-		m_Position.y = m_Arena.height + m_TileSize;
+		m_Position.y = m_Arena.top + m_TileSize;
 	}
 
 	//Function to calculate the angle in wich way the player is facing
