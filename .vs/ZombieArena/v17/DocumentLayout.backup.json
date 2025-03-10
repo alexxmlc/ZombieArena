@@ -1,57 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\MyProjects\\ZombieArena\\",
+  "WorkspaceRootPath": "E:\\MyProjects\\ZombieArena\\",
   "Documents": [
     {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|D:\\MyProjects\\ZombieArena\\Zombie.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|solutionrelative:Zombie.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|E:\\MyProjects\\ZombieArena\\ZombieArena.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|solutionrelative:ZombieArena.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|D:\\MyProjects\\ZombieArena\\TextureHolder.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|E:\\MyProjects\\ZombieArena\\CreateHorde.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|solutionrelative:CreateHorde.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|E:\\MyProjects\\ZombieArena\\Zombie.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|solutionrelative:Zombie.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|E:\\MyProjects\\ZombieArena\\TextureHolder.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|solutionrelative:TextureHolder.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|D:\\MyProjects\\ZombieArena\\TextureHolder.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|solutionrelative:TextureHolder.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|E:\\MyProjects\\ZombieArena\\Zombie.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|solutionrelative:Zombie.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-=======
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|E:\\MyProjects\\ZombieArena\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|solutionrelative:Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|E:\\MyProjects\\ZombieArena\\ZombieArena.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|solutionrelative:ZombieArena.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|E:\\MyProjects\\ZombieArena\\createBackground.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|solutionrelative:createBackground.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|E:\\MyProjects\\ZombieArena\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-=======
->>>>>>> c1f3928cb3b35741fdf51146e25ad0c8651f50cb
-      "AbsoluteMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|D:\\MyProjects\\ZombieArena\\createBackground.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|solutionrelative:createBackground.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|E:\\MyProjects\\ZombieArena\\TextureHolder.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|solutionrelative:TextureHolder.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|D:\\MyProjects\\ZombieArena\\ZombieArena.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|solutionrelative:ZombieArena.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|D:\\MyProjects\\ZombieArena\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|E:\\MyProjects\\ZombieArena\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|solutionrelative:Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|D:\\MyProjects\\ZombieArena\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
->>>>>>> 44606280adf24ba9b2d0669cad864bb03f11f95b
+      "AbsoluteMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|E:\\MyProjects\\ZombieArena\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|solutionrelative:Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|D:\\MyProjects\\ZombieArena\\ZombieArena.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|solutionrelative:ZombieArena.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|E:\\MyProjects\\ZombieArena\\ZombieArena.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{04EA8901-2B7E-416F-AF31-366DF0821BAE}|ZombieArena.vcxproj|solutionrelative:ZombieArena.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -61,37 +50,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< HEAD
-          "SelectedChildIndex": 4,
-=======
-          "SelectedChildIndex": 1,
->>>>>>> 44606280adf24ba9b2d0669cad864bb03f11f95b
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ZombieArena.cpp",
-              "DocumentMoniker": "D:\\MyProjects\\ZombieArena\\ZombieArena.cpp",
-              "RelativeDocumentMoniker": "ZombieArena.cpp",
-              "ToolTip": "D:\\MyProjects\\ZombieArena\\ZombieArena.cpp",
-              "RelativeToolTip": "ZombieArena.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-24T15:04:18.948Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Zombie.h",
-              "DocumentMoniker": "D:\\MyProjects\\ZombieArena\\Zombie.h",
-              "RelativeDocumentMoniker": "Zombie.h",
-              "ToolTip": "D:\\MyProjects\\ZombieArena\\Zombie.h*",
-              "RelativeToolTip": "Zombie.h*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-10T09:07:48.088Z",
+              "Title": "ZombieArena.cpp",
+              "DocumentMoniker": "E:\\MyProjects\\ZombieArena\\ZombieArena.cpp",
+              "RelativeDocumentMoniker": "ZombieArena.cpp",
+              "ToolTip": "E:\\MyProjects\\ZombieArena\\ZombieArena.cpp*",
+              "RelativeToolTip": "ZombieArena.cpp*",
+              "ViewState": "AgIAAPYAAAAAAAAAAAAAAAIBAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-10T14:37:29.821Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
@@ -101,129 +73,112 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "TextureHolder.cpp",
-              "DocumentMoniker": "D:\\MyProjects\\ZombieArena\\TextureHolder.cpp",
-              "RelativeDocumentMoniker": "TextureHolder.cpp",
-              "ToolTip": "D:\\MyProjects\\ZombieArena\\TextureHolder.cpp*",
-              "RelativeToolTip": "TextureHolder.cpp*",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAaAAAAAAAAAA==",
+              "Title": "CreateHorde.cpp",
+              "DocumentMoniker": "E:\\MyProjects\\ZombieArena\\CreateHorde.cpp",
+              "RelativeDocumentMoniker": "CreateHorde.cpp",
+              "ToolTip": "E:\\MyProjects\\ZombieArena\\CreateHorde.cpp",
+              "RelativeToolTip": "CreateHorde.cpp",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-10T08:44:07.546Z",
+              "WhenOpened": "2025-03-10T15:08:16.247Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Zombie.cpp",
+              "DocumentMoniker": "E:\\MyProjects\\ZombieArena\\Zombie.cpp",
+              "RelativeDocumentMoniker": "Zombie.cpp",
+              "ToolTip": "E:\\MyProjects\\ZombieArena\\Zombie.cpp",
+              "RelativeToolTip": "Zombie.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG0AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-10T14:39:41.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Zombie.h",
+              "DocumentMoniker": "E:\\MyProjects\\ZombieArena\\Zombie.h",
+              "RelativeDocumentMoniker": "Zombie.h",
+              "ToolTip": "E:\\MyProjects\\ZombieArena\\Zombie.h",
+              "RelativeToolTip": "Zombie.h",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAkAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-10T14:37:29.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TextureHolder.cpp",
+              "DocumentMoniker": "E:\\MyProjects\\ZombieArena\\TextureHolder.cpp",
+              "RelativeDocumentMoniker": "TextureHolder.cpp",
+              "ToolTip": "E:\\MyProjects\\ZombieArena\\TextureHolder.cpp",
+              "RelativeToolTip": "TextureHolder.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-10T14:37:29.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "TextureHolder.h",
-              "DocumentMoniker": "D:\\MyProjects\\ZombieArena\\TextureHolder.h",
+              "DocumentMoniker": "E:\\MyProjects\\ZombieArena\\TextureHolder.h",
               "RelativeDocumentMoniker": "TextureHolder.h",
-              "ToolTip": "D:\\MyProjects\\ZombieArena\\TextureHolder.h",
+              "ToolTip": "E:\\MyProjects\\ZombieArena\\TextureHolder.h",
               "RelativeToolTip": "TextureHolder.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-10T08:32:20.267Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T14:37:29.924Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "createBackground.cpp",
-              "DocumentMoniker": "D:\\MyProjects\\ZombieArena\\createBackground.cpp",
+              "DocumentMoniker": "E:\\MyProjects\\ZombieArena\\createBackground.cpp",
               "RelativeDocumentMoniker": "createBackground.cpp",
-<<<<<<< HEAD
-              "ToolTip": "D:\\MyProjects\\ZombieArena\\createBackground.cpp",
-              "RelativeToolTip": "createBackground.cpp",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACMAAABHAAAAAAAAAA==",
-=======
-<<<<<<< HEAD
               "ToolTip": "E:\\MyProjects\\ZombieArena\\createBackground.cpp",
               "RelativeToolTip": "createBackground.cpp",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACkAAAAEAAAAAAAAAA==",
-=======
-              "ToolTip": "D:\\MyProjects\\ZombieArena\\createBackground.cpp*",
-              "RelativeToolTip": "createBackground.cpp*",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAC4AAAAgAAAAAAAAAA==",
->>>>>>> 44606280adf24ba9b2d0669cad864bb03f11f95b
->>>>>>> c1f3928cb3b35741fdf51146e25ad0c8651f50cb
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACMAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-03T14:31:16.937Z"
+              "WhenOpened": "2025-03-10T14:37:29.924Z"
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 6,
-=======
-              "DocumentIndex": 2,
->>>>>>> c1f3928cb3b35741fdf51146e25ad0c8651f50cb
+              "DocumentIndex": 9,
               "Title": "Player.h",
-              "DocumentMoniker": "D:\\MyProjects\\ZombieArena\\Player.h",
+              "DocumentMoniker": "E:\\MyProjects\\ZombieArena\\Player.h",
               "RelativeDocumentMoniker": "Player.h",
-              "ToolTip": "D:\\MyProjects\\ZombieArena\\Player.h",
+              "ToolTip": "E:\\MyProjects\\ZombieArena\\Player.h",
               "RelativeToolTip": "Player.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-03T14:24:20.027Z"
+              "WhenOpened": "2025-03-10T14:37:29.925Z"
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 7,
-=======
-              "DocumentIndex": 3,
->>>>>>> c1f3928cb3b35741fdf51146e25ad0c8651f50cb
-              "Title": "ZombieArena.h",
-              "DocumentMoniker": "D:\\MyProjects\\ZombieArena\\ZombieArena.h",
-              "RelativeDocumentMoniker": "ZombieArena.h",
-              "ToolTip": "D:\\MyProjects\\ZombieArena\\ZombieArena.h",
-              "RelativeToolTip": "ZombieArena.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-03T14:28:47.832Z"
-            },
-            {
-              "$type": "Document",
-<<<<<<< HEAD
               "DocumentIndex": 5,
-=======
-              "DocumentIndex": 0,
->>>>>>> c1f3928cb3b35741fdf51146e25ad0c8651f50cb
-              "Title": "Player.cpp",
-              "DocumentMoniker": "D:\\MyProjects\\ZombieArena\\Player.cpp",
-              "RelativeDocumentMoniker": "Player.cpp",
-              "ToolTip": "D:\\MyProjects\\ZombieArena\\Player.cpp",
-              "RelativeToolTip": "Player.cpp",
-<<<<<<< HEAD
-              "ViewState": "AgIAAJMAAAAAAAAAAAAAALEAAAAAAAAAAAAAAA==",
-=======
-              "ViewState": "AgIAAKUAAAAAAAAAAAAAAA4AAAAWAAAAAAAAAA==",
->>>>>>> 44606280adf24ba9b2d0669cad864bb03f11f95b
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-<<<<<<< HEAD
-              "WhenOpened": "2025-02-24T15:08:48.659Z"
-=======
-              "WhenOpened": "2025-02-24T15:08:48.659Z",
-              "EditorCaption": ""
+              "Title": "ZombieArena.h",
+              "DocumentMoniker": "E:\\MyProjects\\ZombieArena\\ZombieArena.h",
+              "RelativeDocumentMoniker": "ZombieArena.h",
+              "ToolTip": "E:\\MyProjects\\ZombieArena\\ZombieArena.h",
+              "RelativeToolTip": "ZombieArena.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-10T14:37:29.925Z"
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 4,
-=======
-              "DocumentIndex": 1,
->>>>>>> 44606280adf24ba9b2d0669cad864bb03f11f95b
-              "Title": "ZombieArena.cpp",
-              "DocumentMoniker": "D:\\MyProjects\\ZombieArena\\ZombieArena.cpp",
-              "RelativeDocumentMoniker": "ZombieArena.cpp",
-              "ToolTip": "D:\\MyProjects\\ZombieArena\\ZombieArena.cpp",
-              "RelativeToolTip": "ZombieArena.cpp",
-<<<<<<< HEAD
-              "ViewState": "AgIAAOsAAAAAAAAAAAAAAKwAAAAEAAAAAAAAAA==",
-=======
-              "ViewState": "AgIAALkAAAAAAAAAAAAAwOUAAAAAAAAAAAAAAA==",
->>>>>>> 44606280adf24ba9b2d0669cad864bb03f11f95b
+              "DocumentIndex": 8,
+              "Title": "Player.cpp",
+              "DocumentMoniker": "E:\\MyProjects\\ZombieArena\\Player.cpp",
+              "RelativeDocumentMoniker": "Player.cpp",
+              "ToolTip": "E:\\MyProjects\\ZombieArena\\Player.cpp",
+              "RelativeToolTip": "Player.cpp",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAAAA4AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-24T15:04:18.948Z"
->>>>>>> c1f3928cb3b35741fdf51146e25ad0c8651f50cb
+              "WhenOpened": "2025-03-10T14:37:29.926Z"
             }
           ]
         }

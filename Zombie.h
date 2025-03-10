@@ -17,9 +17,9 @@ private:
 	const float CHASER_HEALTH = 1;
 	const float CRAWLER_HEALTH = 3;
 
-	//Sloghtly vary each zombie speed
+	//Slightly vary each zombie speed
 	const int MAX_VARIANCE = 30;
-	const int OFFSET = 101 - MAX_VARIANCE;
+	const int OFFSET = 70;
 
 	//Zombie position
 	Vector2f m_Position;
@@ -42,9 +42,17 @@ public:
 	bool hit();
 
 	//Dead status
-	bool Alive();
+	bool isAlive();
 
 	//Spawn a new zombie
 	void Spawn(float startX, float startY, int type, int seed);
 
+	//Return it's position in the world
+	FloatRect getPosition();
+
+	//Get a copy of the sprite to draw
+	Sprite getSprite();
+
+	//Update the zombie each frame
+	void update(float elapsedTime, Vector2f playerLocation);
 };

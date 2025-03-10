@@ -2,12 +2,15 @@
 #include <iostream>
 #include "Player.h"
 #include "ZombieArena.h"
+#include "TextureHolder.h"
 
 using namespace sf;
 
 int main()
 {
-	
+	//The one and only texture holder instance
+	TextureHolder holder;
+
 	//The game will be in one of these 4 states
 	enum class State { PAUSED, LEVELING_UP, GAME_OVER, PLAYING };
 
@@ -51,7 +54,12 @@ int main()
 		return 1;
 	}
 
+	//Prepare a horde of zombies
+	int numZombies;
+	int numZombiesAlive;
+	Zombie* zombies = nullptr;
 
+	bool zoomed = false;
 
 	//main game loop
 	while (window.isOpen())
@@ -183,6 +191,14 @@ int main()
 				//Spawn the player in the minddle of the arena
 				player.spawn(arena, resolution, tileSize);
 
+				//Create a horde of zombies
+				numZombies = 10;
+				
+				//Delete the previously allocated mem
+				delete[] zombies;
+				zombies = createHorde(numZombies, arena);
+				numZombiesAlive = numZombies;
+
 				//Reset the clock so there isn't a frame jump
 				clock.restart();
 			}
@@ -214,6 +230,16 @@ int main()
 
 			//Make the view center around the player
 			mainView.setCenter(player.getCenter());
+
+			//Loop through each zombie and update them
+			for (int i = 0; i < numZombies; i++)
+			{
+				if (zombies[i].isAlive())
+				{
+					zombies[i].update(dt.asSeconds(), playerPosition);
+				}
+			}
+
 		}//End updating the scene
 
 		/*
@@ -228,8 +254,20 @@ int main()
 			//Set the mainView to window and draw everything to it
 			window.setView(mainView);
 
+			if (!zoomed)
+			{
+				mainView.zoom(0.5f);
+				zoomed = true;
+			}
+			
 			//Draw the background
 			window.draw(background, &textureBackgrund);
+
+			//Draw the zombies
+			for (int i = 0; i < numZombies; i++)
+			{
+				window.draw(zombies[i].getSprite());
+			}
 
 			//Draw the player
 			window.draw(player.getSprite());
@@ -250,5 +288,8 @@ int main()
 
 		}
 		window.display();
-	}
+	}//End of game loop
+	
+	delete[] zombies;
+	return 0;
 }

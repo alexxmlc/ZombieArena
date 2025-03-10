@@ -1,6 +1,8 @@
 #include "TextureHolder.h"
 #include <assert.h>
 
+//Following the singleton pattern, only one instance of the class exists and it's 
+//accsesible globally by m_s_Instance
 TextureHolder* TextureHolder::m_s_Instance = nullptr;
 
 TextureHolder::TextureHolder()
@@ -8,7 +10,7 @@ TextureHolder::TextureHolder()
 	//Make sure m_s_Instance = nullptr, if it doesn t the game will exit execution
 	assert(m_s_Instance == nullptr);
 
-	//Assing the ponter to *this* instance
+	//Assing the ponter to current instance
 	m_s_Instance = this;
 }
 
