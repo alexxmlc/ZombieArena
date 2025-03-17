@@ -4,6 +4,7 @@
 #include "ZombieArena.h"
 #include "TextureHolder.h"
 #include "Bullet.h"
+#include "Pickup.h"
 
 using namespace sf;
 
@@ -57,7 +58,8 @@ int main()
 	Zombie* zombies = nullptr;
 
 	//Create 100 bullets
-	Bullet bullets[100];
+	const int NB_OF_BULLETS = 100;
+	Bullet bullets[NB_OF_BULLETS];
 	int currentBullet = 0;
 	int bulletsSpare = 24;
 	int bulletsInClip = 6;
@@ -72,6 +74,14 @@ int main()
 	Texture textureCrosshair = TextureHolder::GetTexture("graphics/crosshair.png");
 	spriteCrosshair.setTexture(textureCrosshair);
 	spriteCrosshair.setOrigin(25, 25);
+
+	//Create some pickups
+	Pickup healthPickup(1);
+	Pickup ammoPickup(2);
+
+	//Score
+	int score = 0;
+	int hiScore = 0;
 
 	bool zoomed = false;
 
@@ -247,8 +257,12 @@ int main()
 				//Spawn the player in the minddle of the arena
 				player.spawn(arena, resolution, tileSize);
 
+				//Config the pickups
+				healthPickup.setArena(arena);
+				ammoPickup.setArena(arena);
+
 				//Create a horde of zombies
-				numZombies = 10;
+				numZombies = 6;
 				
 				//Delete the previously allocated mem
 				delete[] zombies;
@@ -300,12 +314,79 @@ int main()
 			}
 
 			//Update any bullets that are in flight
-			for (int i = 0; i < 100; i++)
+			for (int i = 0; i < NB_OF_BULLETS; i++)
 			{
 				if (bullets[i].isInFlight())
 				{
 					bullets[i].update(dtAsSeconds);
 				}
+			}
+
+			//Update pickup
+			healthPickup.update(dtAsSeconds);
+			ammoPickup.update(dtAsSeconds);
+
+			//Have any zombies been shot
+			for (int i = 0; i < NB_OF_BULLETS; i++)
+			{
+				for (int j = 0; j < numZombies; j++)
+				{
+					//Checks if the bullet has been shot and the zombie is still alive
+					if (bullets[i].isInFlight() && zombies[j].isAlive())
+					{
+						//Checks for the collision bullet->zombie
+						if (bullets[i].getPosition().intersects(zombies[j].getPosition()))
+						{
+							//If collides stop the bullet
+							bullets[i].stop();
+
+							//If hit increase the score and kill the zombie if the hit functions returns true
+							//else it just gives damage to the zombie
+							if (zombies[j].hit())
+							{
+								score += 10;
+								if (score >= hiScore)
+								{
+									hiScore = score;
+								}
+								numZombiesAlive--;
+
+								if (numZombiesAlive == 0)
+								{
+									state = State::LEVELING_UP;
+								}
+							}
+						}
+					}
+				}
+			}//End zombie being shot
+
+			//Has the player been touched by a zombie
+			for (int i = 0; i < numZombies; i++)
+			{
+				if (player.getPosition().intersects(zombies[i].getPosition()) && zombies[i].isAlive())
+				{
+					if (player.hit(timeGameTotal))
+					{
+
+					}
+
+					if (player.getHealth() <= 0)
+					{
+						state = State::GAME_OVER;
+					}
+				}
+			}
+
+			//Has the player touched a pickup
+			if (player.getPosition().intersects(healthPickup.getPosition()) && healthPickup.isSpawned())
+			{
+				player.increaseHealthLevel(healthPickup.gotIt());
+			}
+
+			if (player.getPosition().intersects(ammoPickup.getPosition()) && ammoPickup.isSpawned())
+			{
+				bulletsSpare += ammoPickup.gotIt();
 			}
 
 		}//End updating the scene
@@ -338,7 +419,7 @@ int main()
 			}
 
 			//Draw the bullets each frame
-			for (int i = 0; i < 100; i++)
+			for (int i = 0; i < NB_OF_BULLETS; i++)
 			{
 				if (bullets[i].isInFlight())
 				{
@@ -351,6 +432,17 @@ int main()
 
 			//Draw the crosshair
 			window.draw(spriteCrosshair);
+
+			//Draw the pickups
+			if (healthPickup.isSpawned())
+			{
+				window.draw(healthPickup.getSprite());
+			}
+			if (ammoPickup.isSpawned())
+			{
+				window.draw(ammoPickup.getSprite());
+
+			}
 		}
 
 		if (state == State::LEVELING_UP)

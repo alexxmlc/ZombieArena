@@ -49,7 +49,7 @@ bool Zombie::hit()
 {
 	m_Health--;
 
-	if (m_Health < 0)
+	if (m_Health <= 0)
 	{
 		//dead
 		m_Alive = false;
@@ -68,7 +68,18 @@ bool Zombie::isAlive()
 
 FloatRect Zombie::getPosition()
 {
-	return m_Sprite.getGlobalBounds();
+	FloatRect bounds = m_Sprite.getGlobalBounds();
+
+	//The bloater was too fat, it got to me too quickly so i shrunk the hitbox of the zombies in general
+	if (m_Sprite.getTexture() == &TextureHolder::GetTexture("graphics/bloater.png"))
+	{
+		bounds.left += bounds.width * 0.10f;  // Shrink from the sides
+		bounds.top += bounds.height * 0.10f;  // Shrink from the top
+		bounds.width *= 0.8f;  // Reduce width to 70%
+		bounds.height *= 0.8f; // Reduce height to 70%
+	}
+
+	return bounds;
 }
 
 Sprite Zombie::getSprite()

@@ -3,7 +3,7 @@
 //The constructor only sets the size of the bullet
 Bullet::Bullet()
 {
-	m_BulletShape.setSize(sf::Vector2f(2, 2));
+	m_BulletShape.setSize(sf::Vector2f(5, 5));
 }
 
 void Bullet::shoot(float startX, float startY, float targetX, float targetY)
@@ -25,7 +25,7 @@ void Bullet::shoot(float startX, float startY, float targetX, float targetY)
 	//Calculate the ratio between x and y, it braks down the speed into component on x and y axes
 	//based on the travelling direction (gradient)
 	//1 + gradient role: *if the gradient is 1, the bullet is moving equally on x and y axes (45 degrees), gradient>1 it moves more verically
-	//the ratioXY is less after the division and therefore moves more on the y and it's speed on x axys is less
+	//the ratioXY is less after the division, therefore the bullet moves more on the y axis and it's speed on x axys is less
 	//gradient < 1 it means the bullet moves more horizontally => ratioXY will be larger and that means more movement on x axis*
 	//basically how much will the bullet move on y axis (vertically)
 	float ratioXY = m_BulletSpeed / (1 + gradient);
