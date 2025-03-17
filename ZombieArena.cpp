@@ -3,6 +3,7 @@
 #include "Player.h"
 #include "ZombieArena.h"
 #include "TextureHolder.h"
+#include "Bullet.h"
 
 using namespace sf;
 
@@ -47,17 +48,30 @@ int main()
 
 	//Create the background and load the texture for it
 	VertexArray background;
-	Texture textureBackgrund;
-	if (!textureBackgrund.loadFromFile("graphics/background_sheet.png")) 
-	{
-		std::cerr << "Error: Could not load background texture!" << std::endl;
-		return 1;
-	}
+	Texture textureBackground = TextureHolder::GetTexture("graphics/background_sheet.png");
+	
 
 	//Prepare a horde of zombies
 	int numZombies;
 	int numZombiesAlive;
 	Zombie* zombies = nullptr;
+
+	//Create 100 bullets
+	Bullet bullets[100];
+	int currentBullet = 0;
+	int bulletsSpare = 24;
+	int bulletsInClip = 6;
+	int clipSize = 6;
+	float fireRate = 1;
+	//Last time fired
+	Time lastPressed;
+
+	//Give the player a crosshair, hide mouse pointer and replace with crosshair
+	window.setMouseCursorVisible(false);
+	Sprite spriteCrosshair;
+	Texture textureCrosshair = TextureHolder::GetTexture("graphics/crosshair.png");
+	spriteCrosshair.setTexture(textureCrosshair);
+	spriteCrosshair.setOrigin(25, 25);
 
 	bool zoomed = false;
 
@@ -92,7 +106,29 @@ int main()
 					state = State::LEVELING_UP;
 				}
 
-				if (state == State::PLAYING) {}
+				if (state == State::PLAYING)
+				{
+					//Reloading the gun
+					if (event.key.code == Keyboard::R)
+					{
+						if (bulletsSpare >= clipSize)
+						{
+							//Fully reload, we have plenty of bullets
+							bulletsInClip = clipSize;
+							bulletsSpare -= clipSize;
+						}
+						else if (bulletsSpare > 0)
+						{
+							//Only a few bullets left
+							bulletsInClip += bulletsSpare;
+							bulletsSpare = 0;
+						}
+						else
+						{
+
+						}
+					}//End reload
+				}
 			}
 
 		}//end pool event while
@@ -142,6 +178,26 @@ int main()
 				player.stopRight();
 			}
 		}//end player movement
+
+		//Fire a bullet
+		if (Mouse::isButtonPressed(sf::Mouse::Left))
+		{
+			//Don t shoot more often than the fire rate and check for bullets in clip
+			if (timeGameTotal.asMilliseconds() - lastPressed.asMilliseconds() > 1000 / fireRate && bulletsInClip > 0)
+			{
+				//Pass the center of the player and the center of the corsshair to the shoot function
+				//with other words start and finish points
+				bullets[currentBullet].shoot(player.getCenter().x, player.getCenter().y, mouseWorldPosition.x, mouseWorldPosition.y);
+				currentBullet++;
+
+				if (currentBullet > 99)
+				{
+					currentBullet = 0;
+				}
+				lastPressed = timeGameTotal;
+				bulletsInClip--;
+			}
+		}//End fire bullet
 
 		//Handle the leveling up state
 		if (state == State::LEVELING_UP)
@@ -211,7 +267,7 @@ int main()
 		*/
 		if (state == State::PLAYING)
 		{
-			//update delta time and total playing time
+			//Update delta time and total playing time
 			Time dt = clock.restart();
 			timeGameTotal += dt;
 			float dtAsSeconds = dt.asSeconds();
@@ -221,6 +277,9 @@ int main()
 
 			//Convert mouse position to world coordinates of mainView
 			mouseWorldPosition = window.mapPixelToCoords(Mouse::getPosition(), mainView);
+
+			//Set the crosshair to the mouse world location
+			spriteCrosshair.setPosition(mouseWorldPosition);
 
 			//Update mainView layer
 			player.update(dtAsSeconds, Mouse::getPosition());
@@ -237,6 +296,15 @@ int main()
 				if (zombies[i].isAlive())
 				{
 					zombies[i].update(dt.asSeconds(), playerPosition);
+				}
+			}
+
+			//Update any bullets that are in flight
+			for (int i = 0; i < 100; i++)
+			{
+				if (bullets[i].isInFlight())
+				{
+					bullets[i].update(dtAsSeconds);
 				}
 			}
 
@@ -261,7 +329,7 @@ int main()
 			}
 			
 			//Draw the background
-			window.draw(background, &textureBackgrund);
+			window.draw(background, &textureBackground);
 
 			//Draw the zombies
 			for (int i = 0; i < numZombies; i++)
@@ -269,8 +337,20 @@ int main()
 				window.draw(zombies[i].getSprite());
 			}
 
+			//Draw the bullets each frame
+			for (int i = 0; i < 100; i++)
+			{
+				if (bullets[i].isInFlight())
+				{
+					window.draw(bullets[i].getShape());
+				}
+			}
+
 			//Draw the player
 			window.draw(player.getSprite());
+
+			//Draw the crosshair
+			window.draw(spriteCrosshair);
 		}
 
 		if (state == State::LEVELING_UP)

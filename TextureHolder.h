@@ -11,7 +11,8 @@ using namespace std;
 class TextureHolder
 {
 private:
-	//Map that contains the pair (string, texture)
+	//Map that contains the pair (key = string, value = texture)
+	//stores the textures in a map, easy access and use
 	map<string, Texture> m_Textures;
 
 	//Pointer
