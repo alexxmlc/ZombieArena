@@ -9,4 +9,4 @@ Requirements
 SFML library
 A C++ compiler (e.g., Visual Studio, GCC)
 
-To play the game download from the debug folder the .exe file and all .dll files. If windows says it may harm your computer just ignore it.
+To play the game download from the debug folder the .exe file and all .dll files. If windows says it may harm your computer just ignore it. To start the game press ENTER and then 1.
