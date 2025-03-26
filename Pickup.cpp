@@ -14,7 +14,7 @@ Pickup::Pickup(int type)
 	else
 	{
 		m_Sprite = Sprite(TextureHolder::GetTexture("graphics/ammo_pickup.png"));
-		m_Value - AMMO_START_VALUE;
+		m_Value = AMMO_START_VALUE;
 	}
 
 	m_Sprite.setOrigin(25, 25);
